@@ -12,9 +12,11 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )
 						<?php the_title(); ?>
 						<?php woocommerce_page_title(); ?>
 					</h1>
-					<h2 class="fs-4">
-                        Nourishing recipes designed to support your health without compromising on flavour
-                    </h2>
+					<?php if ( get_field('sub_title') ): ?>
+						<h2 class="fs-4">
+							<?php echo acf_esc_html( get_field('sub_title') ); ?>
+						</h2>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

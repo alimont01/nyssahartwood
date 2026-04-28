@@ -15,9 +15,11 @@ get_header(); ?>
                     </h1>
                 </div>
                 <div class="col-lg-6 mt-4 text-center">
-                    <h2 class="fs-4">
-                        Nourishing recipes designed to support your health without compromising on flavour.
-                    </h2>
+                    <?php if ( get_field('sub_title') ): ?>
+						<h2 class="fs-4">
+							<?php echo acf_esc_html( get_field('sub_title') ); ?>
+						</h2>
+					<?php endif; ?>
                     <span class="p-4 d-block">{ -- Get form -- }</span>
                     <p class="small">Instant download. No spam.</p>
                 </div>

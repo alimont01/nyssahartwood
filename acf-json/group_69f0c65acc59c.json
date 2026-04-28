@@ -1,14 +1,14 @@
 {
-    "key": "group_69f0c2eb865d2",
-    "title": "Logo options",
+    "key": "group_69f0c65acc59c",
+    "title": "Sub title",
     "fields": [
         {
-            "key": "field_69f0c2ebd9a59",
-            "label": "Choose logo",
-            "name": "choose_logo",
+            "key": "field_69f0c65b88875",
+            "label": "Sub title",
+            "name": "sub_title",
             "aria-label": "",
-            "type": "true_false",
-            "instructions": "By default, the black version of the logo is used. Enable this option to switch to the white version.",
+            "type": "text",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,12 +16,12 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
+            "default_value": "",
+            "maxlength": "",
             "allow_in_bindings": 0,
-            "ui_on_text": "White",
-            "ui_off_text": "Black",
-            "ui": 1
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -34,7 +34,7 @@
         ]
     ],
     "menu_order": 0,
-    "position": "side",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -45,5 +45,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1777387967
+    "modified": 1777387129
 }
