@@ -7,20 +7,19 @@ on:
 
 jobs:
   deploy:
-    name: Deploy via SFTP
+    name: Deploy via FTP
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Upload theme files
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          username: ${{ secrets.SFTP_USERNAME }}
-          server: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          local_path: './'
-          remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
-          sftp_only: true
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          server-dir: ${{ secrets.FTP_REMOTE_PATH }}
