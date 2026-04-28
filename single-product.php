@@ -44,7 +44,7 @@ get_header();
                         <div class="lighter-cream-bg plate"></div>
                     </div>
 
-                    <div class="col-12 col-lg-6 ">
+                    <div class="col-12 col-lg-6 z-top">
                         <div class="">
                             <?php
                             /**
