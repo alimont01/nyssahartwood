@@ -15,7 +15,7 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $shop_page_id ), 'f
 					</h1>
 
 					<?php if ( get_field('sub_title', $shop_page_id) ): ?>
-						<h2 class="fs-4">
+						<h2 class="fs-4 mt-4">
 							<?php echo acf_esc_html( get_field('sub_title', $shop_page_id) ); ?>
 						</h2>
 					<?php endif; ?>

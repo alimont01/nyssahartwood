@@ -61,6 +61,10 @@ get_header();
                              */
                             do_action( 'woocommerce_single_product_summary' );
                             ?>
+                            <p class="small mt-3 mb-5">Instant download after purchase.</p>
+                            <?php if( get_field('what_you’ll_find_inside') ): ?>
+                                <?php echo acf_esc_html( get_field('what_you’ll_find_inside') ); ?>
+                            <?php endif; ?>
                         </div>
                     </div>
 

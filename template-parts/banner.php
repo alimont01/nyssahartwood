@@ -13,7 +13,7 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )
 						<?php woocommerce_page_title(); ?>
 					</h1>
 					<?php if ( get_field('sub_title') ): ?>
-						<h2 class="fs-4">
+						<h2 class="fs-4 mt-4">
 							<?php echo acf_esc_html( get_field('sub_title') ); ?>
 						</h2>
 					<?php endif; ?>
@@ -28,7 +28,7 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )
 	<header class="container-fluid hero cream-bg">
 		<div class="container pb-5">
 			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
+				<div class="col-lg-7 text-center">
 					<h1 class="mt-0">
 						<?php the_title(); ?>
 					</h1>
