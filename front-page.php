@@ -18,7 +18,7 @@ get_header(); ?>
                     <h2 class="fs-4">
                         Nourishing recipes designed to support your health without compromising on flavour.
                     </h2>
-                    <span class="p-4 d-block">Get form</span>
+                    <span class="p-4 d-block">{ -- Get form -- }</span>
                     <p class="small">Instant download. No spam.</p>
                 </div>
             </div>
