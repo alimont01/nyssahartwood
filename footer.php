@@ -57,7 +57,7 @@
         </div>
         <div class="row">
             <div class="col-6 mb-3 mb-lg-0">
-                <p class="small mb-2">&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?> </p>
+                <p class="small mb-2">&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?> ...</p>
             </div>
             <div class="col-6 text-end">
                 <a href="https://alizan.uk/" target="_blank">
