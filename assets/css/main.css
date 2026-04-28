@@ -1,0 +1,317 @@
+/* Additional theme styles */
+h1, h2, h3, .price {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+}
+h4, h5, h6, p, ul, ol {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-hp h2 {
+  font-family: "DM Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (min-width: 1200px) {
+  .h1, h1 {
+    font-size: 3.8rem;
+  }
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 17px;
+}
+dl, ol, ul {
+  padding-left: 1rem;
+}
+a {
+  text-decoration: none !important;
+  transition: all .35s ease-in-out;
+  color: #000;
+}
+.bi {
+  transition: all .35s ease-in-out;
+}
+.green-arrow {
+  color: #6E851F;
+}
+.button,
+.wc-block-components-button,
+.woocommerce-button {
+  background-color: #6E851F !important;
+  color: #fff !important;
+  padding: 10px 25px !important;
+  border-radius: 50px !important;
+  display: inline-block !important;
+  margin-top: 10px !important;
+  border: 0 !important;
+  transition: all 0.35s ease !important;
+}
+.button:hover,
+.wc-block-components-button:hover,
+.woocommerce-button:hover {
+  background-color: #222 !important;
+}
+.sign-post,
+.sign-post-2 {
+  box-shadow: 0px 5px 14px 3px rgba(0,0,0,0.1);
+  transition: all .35s ease;
+  transform: translateY(0);
+}
+a:hover .sign-post,
+a:hover .sign-post-2 {
+  box-shadow: 0px 5px 14px 3px rgba(0,0,0,0.25);
+  transform: translateY(-5px);
+}
+.main-navigation a {
+  position: relative;
+}
+.main-navigation a:hover,
+header .bi:hover,
+footer .bi:hover,
+.current_page_item a {
+  color: #AE0000;
+}
+header .current_page_item a::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url("../img/nyssa-heart.svg") no-repeat;
+  background-size: auto;
+  background-size: auto;
+  display: block;
+  position: absolute;
+  top: -21px;
+  background-size: auto 100%;
+  right: -21px;
+}
+.main-navigation ul {
+  list-style: none;
+}
+header .main-navigation li {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.cart-icon {
+	position: relative;
+	display: inline-block;
+}
+.cart-count {
+	position: absolute;
+	top: -6px;
+	right: -10px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	padding: 4px 6px;
+	border-radius: 50%;
+	min-width: 18px;
+	text-align: center;
+}
+.z-top {
+  z-index: 9;
+  position: relative;
+}
+.hero-hp {
+  min-height: 600px;
+  padding-top: 260px;
+  position: relative;
+}
+.hero {
+  padding-top: 190px;
+  position: relative;
+}
+.text-image {
+  object-fit: cover;
+  height: 460px !important;
+}
+.feat-img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: top;
+}
+.cover-img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.bg-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.book-block {
+  margin-top: 100px;
+}
+.book-bg-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(-50%, -30%);
+  left: 50%;
+  top: 0;
+}
+.green-bg {
+  background-color: #7F936E;
+}
+.blue-bg {
+  background-color: #6F868C;
+}
+.purple-bg {
+  background-color: #8A6F86;
+}
+.cream-bg {
+  background-color: #FDF5E4;
+}
+.lighter-cream-bg {
+  background-color: #FFFAF0;
+}
+.grey-bg {
+  background-color: #efefef;
+}
+.recipe-bg {
+  background-image: url(../img/recipe-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sign-post .wp-post-image {
+  object-fit: cover;
+  height: 260px !important;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  margin-bottom: 10px;
+}
+.alizan-logo {
+  width: 100%;
+  max-width: 100px !important;
+}
+.book-cover {
+  position: relative;
+  width: 130px;
+  height: auto;
+  transform: translate(-0%, -43%) rotate(-9deg);
+}
+.book-cover-height {
+  height: 120px;
+}
+.shop-book-cover {
+  transform: translateY(-20px) rotate(-4deg);
+  width: 200px;
+  height: auto;
+}
+.w-100 {
+  height: auto;
+}
+.recipe-categories a {
+  background-color: #FFECBD;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+.recipe-cat {
+  transform: translateY(-50%);
+}
+.recipe-cat span {
+  background-color: #FFECBD;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+.single-product .wp-post-image {
+   rotate: -5deg;
+   max-width: 380px;
+  height: auto;
+}
+.single-product .plate {
+  background-color: #FFFAF0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.woocommerce .quantity,
+.woocommerce .tabs {
+  display: none;
+}
+.woocommerce-notices-wrapper {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-45px);
+}
+.woocommerce-notices-wrapper .woocommerce-message {
+  padding: 10px;
+}
+.woocommerce-notices-wrapper .woocommerce-message a {
+  margin: 0;
+}
+.woocommerce .price {
+  font-size: 30px;
+}
+.woocommerce .more-book h2 {
+  margin-bottom: 20px;
+}
+.woocommerce .more-book h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+}
+.book {
+  transform: translateY(-20px) rotate(-4deg);
+}
+/* Responsive styles */
+@media (max-width: 1399px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+  .recipe-cat {
+    transform: translateY(0);
+    margin-bottom: 20px;
+  }
+  .book-cover {
+    transform: translate(-0%, 11%) rotate(-9deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .text-image {
+    height: 260px !important;
+    object-position: top;
+  }
+}
+
+@media (max-width: 575px) {
+  .recipe-cat {
+    transform: translateY(-50%);
+    margin-bottom: 0px;
+  }
+  .book-cover {
+    transform: translate(-0%, -9%) rotate(-9deg);
+  }
+  .book-cover-height {
+    height: auto;
+  }
+}
