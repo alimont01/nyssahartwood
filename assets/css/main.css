@@ -36,6 +36,9 @@ a {
 .bi {
   transition: all .35s ease-in-out;
 }
+.bi-arrow-right-circle-fill {
+  font-size: 45px;
+}
 .green-arrow {
   color: #6E851F;
 }
@@ -116,6 +119,13 @@ header .main-navigation li {
 .z-top {
   z-index: 9;
   position: relative;
+}
+.overlap {
+  margin-top: -70px
+}
+.overlap img {
+  width: 100%;
+  max-width: 300px;
 }
 .hero-hp {
   min-height: 600px;
@@ -293,6 +303,15 @@ footer li {
   }
   .book-cover {
     transform: translate(-0%, 11%) rotate(-9deg);
+  }
+  .overlap {
+    margin-top: -40px;
+  }
+  .overlap img {
+    max-width: 150px;
+  }
+  .book-block {
+    margin-top: 0px;
   }
 }
 

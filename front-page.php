@@ -27,6 +27,24 @@ get_header(); ?>
         </div>
         <img class="position-absolute top-0 start-0 cover-img" src="<?php echo $thumb['0'];?>" alt="Nyssa Hartwood Healing Meals">
     </div>
+    <div class="container z-top overlap">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-start ps-lg-5">
+                <?php 
+                $image_1 = get_field('image_one');
+                if( !empty( $image_1 ) ): ?>
+                    <img src="<?php echo esc_url($image_1['url']); ?>" alt="<?php echo esc_attr($image_1['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="col-lg-6 pe-5 text-end d-none d-lg-inline-block">
+                <?php 
+                $image_1 = get_field('image_two');
+                if( !empty( $image_1 ) ): ?>
+                    <img src="<?php echo esc_url($image_1['url']); ?>" alt="<?php echo esc_attr($image_1['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
 
     <?php get_template_part( 'template-parts/flexible-page-content' ); ?>
 

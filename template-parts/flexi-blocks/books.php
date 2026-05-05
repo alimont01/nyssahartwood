@@ -34,7 +34,7 @@
 								<div class="col-6 text-start"><?php echo acf_esc_html( get_sub_field('book_price') ); ?></div>
 							<?php endif; ?>
 							<div class="col-6 text-end">
-								<i class="bi bi-arrow-right-circle-fill fs-1"></i>
+								<i class="bi bi-arrow-right-circle-fill"></i>
 							</div>
 						</div>
 					</div>
