@@ -38,11 +38,14 @@
               </a>
             </div>
             <div class="col-4 col-sm-7 col-lg-9 d-flex flex-column align-items-end">
-                <div class="d-flex flex-grow-1">
+                <div class="d-flex flex-grow-1 sub-menu align-items-center align-items-md-start">
                     <a href="/my-account/"><i class="bi bi-person-circle fs-5 me-2"></i></a>
                     <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="cart-icon">
                       <i class="bi bi-bag-heart-fill fs-5"></i>
                       <span class="cart-count"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
+                    </a>
+                    <a href="#" class="d-inline-block d-md-none">
+                      <i class="bi bi-list fs-5"></i>
                     </a>
                 </div>
                <?php

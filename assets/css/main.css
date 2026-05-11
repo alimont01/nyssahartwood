@@ -104,17 +104,20 @@ header .main-navigation li {
 	display: inline-block;
 }
 .cart-count {
-	position: absolute;
-	top: -6px;
-	right: -10px;
-	background: #000;
-	color: #fff;
-	font-size: 12px;
-	line-height: 1;
-	padding: 4px 6px;
-	border-radius: 50%;
-	min-width: 18px;
-	text-align: center;
+  position: absolute;
+  top: 0;
+  right: -13px;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 50%;
+  min-width: 18px;
+  text-align: center;
+}
+.sub-menu a {
+  color: #b95a57;
 }
 .z-top {
   z-index: 9;
@@ -125,7 +128,7 @@ header .main-navigation li {
 }
 .overlap img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
 }
 .hero-hp {
   min-height: 600px;
@@ -316,6 +319,15 @@ footer li {
 }
 
 @media (max-width: 767px) {
+  .hero-hp {
+    min-height: auto;
+  }
+  .hero-hp .h-100 {
+    height: 50% !important;
+  }
+  .hero-hp .w-50 {
+    width: 100% !important;
+  }
   .text-image {
     height: 260px !important;
     object-position: top;

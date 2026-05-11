@@ -58,7 +58,7 @@ get_header();
                                     <?php endif; ?>
                                 </span>
                                 <div class="col-12 text-center green-arrow">
-                                    <i class="bi bi-arrow-right-circle-fill fs-1"></i>
+                                    <i class="bi bi-arrow-right-circle-fill"></i>
                                 </div>
                             </div>
                         </div>

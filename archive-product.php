@@ -9,28 +9,23 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $shop_page_id ), 'f
 	<header class="container-fluid hero-hp cream-bg position-relative">
 		<div class="container pb-5">
 			<div class="row justify-content-end">
-				<div class="col-lg-6 ps-lg-5">
+				<div class="col-md-6 ps-md-4 ps-lg-5">
 					<h1 class="mt-0 fs-1">
 						<?php woocommerce_page_title(); ?>
 					</h1>
-
 					<?php if ( get_field('sub_title', $shop_page_id) ): ?>
 						<h2 class="fs-4 mt-4">
 							<?php echo acf_esc_html( get_field('sub_title', $shop_page_id) ); ?>
 						</h2>
 					<?php endif; ?>
-
 				</div>
 			</div>
 		</div>
-
 		<div class="w-50 h-100 position-absolute start-0 top-0">
 			<img class="position-absolute top-0 start-0 feat-img" src="<?php echo $thumb[0]; ?>" alt="Shop Healing Meals">
 		</div>
 	</header>
-
 <?php else: ?> 
-
 	<header class="container-fluid hero cream-bg">
 		<div class="container pb-5">
 			<div class="row justify-content-center">
@@ -38,14 +33,18 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $shop_page_id ), 'f
 					<h1 class="mt-0">
 						<?php woocommerce_page_title(); ?>
 					</h1>
+					<?php if ( get_field('sub_title', $shop_page_id) ): ?>
+						<h2 class="fs-4 mt-4">
+							<?php echo acf_esc_html( get_field('sub_title', $shop_page_id) ); ?>
+						</h2>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
 	</header>
-
 <?php endif; ?> 
 
-<div class="container py-4">
+<div class="container py-4 d-none">
     <div class="row">
         <div class="col-12">
             <?php
@@ -58,6 +57,8 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $shop_page_id ), 'f
         </div>
     </div>
 </div>
+
+<?php get_template_part( 'template-parts/flexible-page-content' ); ?>
 
 <div class="container py-5">    
     <div class="row g-4">
@@ -89,7 +90,7 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $shop_page_id ), 'f
                                         <div class="col-6 text-start"><?php echo $product->get_price_html(); ?></div>
                                     <?php endif; ?>
                                     <div class="col-6 text-end">
-                                        <i class="bi bi-arrow-right-circle-fill fs-1"></i>
+                                        <i class="bi bi-arrow-right-circle-fill"></i>
                                     </div>
                                 </div>
                             </div>

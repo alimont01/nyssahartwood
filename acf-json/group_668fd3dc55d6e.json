@@ -17,6 +17,75 @@
                 "id": ""
             },
             "layouts": {
+                "layout_6a01b1dc8f7f7": {
+                    "key": "layout_6a01b1dc8f7f7",
+                    "name": "intro_text_block",
+                    "label": "Intro text block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6a01b1dc8f7f8",
+                            "label": "Intro title",
+                            "name": "intro_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6a01b1dc8f7f9",
+                            "label": "Intro body text",
+                            "name": "intro_body_text",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 1,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6a01b1dc8f7fa",
+                            "label": "Intro link",
+                            "name": "intro_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_67d40e9b0a6fe": {
                     "key": "layout_67d40e9b0a6fe",
                     "name": "book_block",
@@ -408,6 +477,27 @@
                             "mime_types": "",
                             "allow_in_bindings": 1,
                             "preview_size": "thumbnail"
+                        },
+                        {
+                            "key": "field_6a01b99060b92",
+                            "label": "Display image as a circle?",
+                            "name": "display_image_as_a_circle",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -725,6 +815,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 0,
@@ -739,5 +836,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1777303586
+    "modified": 1778498037
 }

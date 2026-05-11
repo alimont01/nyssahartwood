@@ -11,6 +11,7 @@
 function nyssa_hartwood_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'woocommerce' );
+	add_image_size( 'square', 800, 800,  array( 'center', 'center' ) );
 }
 add_action( 'after_setup_theme', 'nyssa_hartwood_theme_setup' );
 

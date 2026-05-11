@@ -1,20 +1,33 @@
 <div class="container py-3 py-lg-5">
 	<div class="row align-items-center">
 		<div class="col-md-4">
-			<?php 
-			$image = get_sub_field('image_text_image');
-			$size = 'medium';
+			<?php if( get_sub_field('display_image_as_a_circle') ): ?>
+				<?php 
+				$image = get_sub_field('image_text_image');
+				$size = 'square';
 
-			if( $image ) {
-				echo wp_get_attachment_image( $image, $size, false, array(
-					'class' => 'w-100 rounded-3 text-image mb-3 mb-md-0'
-				));
-			}
-			?>
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size, false, array(
+						'class' => 'w-100 rounded-circle mb-3 mb-md-0'
+					));
+				}
+				?>
+			<?php else: ?>
+				<?php 
+				$image = get_sub_field('image_text_image');
+				$size = 'medium';
+
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size, false, array(
+						'class' => 'w-100 rounded-3 text-image mb-3 mb-md-0'
+					));
+				}
+				?>
+			<?php endif; ?>
 		</div>
 		<div class="col-md-8">
 			<?php if( get_sub_field('block_title_text_image') ): ?>
-				<h3 class="fs-1 mb-3"><?php echo acf_esc_html( get_sub_field('block_title_text_image') ); ?></h3>
+				<h2 class="mb-3"><?php echo acf_esc_html( get_sub_field('block_title_text_image') ); ?></h2>
 			<?php endif; ?>
 			<?php if( get_sub_field('body_text_text_image') ): ?>
 				<?php echo acf_esc_html( get_sub_field('body_text_text_image') ); ?>
@@ -31,3 +44,4 @@
 		</div>
 	</div>
 </div>
+

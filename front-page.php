@@ -28,7 +28,7 @@ get_header(); ?>
         <img class="position-absolute top-0 start-0 cover-img" src="<?php echo $thumb['0'];?>" alt="Nyssa Hartwood Healing Meals">
     </div>
     <div class="container z-top overlap">
-        <div class="row">
+        <div class="row px-0 px-lg-5">
             <div class="col-lg-6 text-center text-lg-start ps-lg-5">
                 <?php 
                 $image_1 = get_field('image_one');
