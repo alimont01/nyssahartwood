@@ -20,8 +20,9 @@ get_header(); ?>
 							<?php echo acf_esc_html( get_field('sub_title') ); ?>
 						</h2>
 					<?php endif; ?>
-                    <span class="p-4 d-block">{ -- Get form -- }</span>
-                    <p class="small">Instant download. No spam.</p>
+                    <div class="my-4">
+                        <?php get_template_part( 'template-parts/mailerlite' ); ?>
+                    </div>
                 </div>
             </div>
         </div>
