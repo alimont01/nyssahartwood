@@ -68,11 +68,20 @@ get_header();
 		}
 
 		const downloadText = downloadButton.querySelector('.download-text');
+		const fileUrl = downloadButton.href;
 
 		downloadText.textContent = 'Downloading…';
 
 		setTimeout(function () {
-			window.location.href = downloadButton.href;
+			const tempLink = document.createElement('a');
+
+			tempLink.href = fileUrl;
+			tempLink.download = '';
+			tempLink.style.display = 'none';
+
+			document.body.appendChild(tempLink);
+			tempLink.click();
+			document.body.removeChild(tempLink);
 
 			setTimeout(function () {
 				downloadText.textContent = 'Download your free book';
