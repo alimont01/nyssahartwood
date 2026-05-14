@@ -49,9 +49,9 @@ get_header(); ?>
 
     <?php get_template_part( 'template-parts/flexible-page-content' ); ?>
 
-    <div class="container-fluid darker-cream-bg position-relative">
+    <div id="footer-form" class="container-fluid darker-cream-bg position-relative">
         <div class="container z-top">
-            <div class="row align-items-center">
+            <div class="row align-items-end">
                 <div class="col-lg-8 py-4 pt-lg-5">
                     <h3 class="mt-0">
                         Get Your Free Healing Meals Book
@@ -59,12 +59,12 @@ get_header(); ?>
                     <p>A collection of simple, anti-inflammatory recipes to help you feel your best.</p>
                     <?php get_template_part( 'template-parts/mailerlite' ); ?>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-none d-lg-block">
                     <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/bowl-of-food.png" alt="Nyssa Hartwood Anti-Inflammatory Recipes">
                 </div>
             </div>
         </div>
-        <div class="white-mask"></div>
+        <div class="white-mask d-none d-lg-block"></div>
     </div>
 
 <?php get_footer(); ?>

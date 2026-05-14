@@ -324,6 +324,10 @@ button {
 button:hover {
   background-color: #222;
 }
+.input-highlight {
+	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12) !important;
+	transition: box-shadow 0.25s ease !important;
+}
 
 /* Responsive styles */
 @media (max-width: 1399px) {
@@ -379,5 +383,13 @@ button:hover {
   }
   .book-cover-height {
     height: auto;
+  }
+  .download-form input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  .download-form button {
+    border-radius: 30px;
+    padding: 10px;
   }
 }

@@ -57,3 +57,36 @@ jQuery(function ($) {
 		});
 	}
 });
+
+// HP scroll to footer form
+jQuery(function ($) {
+	$('.free-book-link').on('click', function (e) {
+		e.preventDefault();
+
+		const target = $('#footer-form');
+
+		if (!target.length) {
+			return;
+		}
+
+		$('html, body').animate({
+			scrollTop: target.offset().top - 80
+		}, 700, function () {
+			const input = target.find('input[type="email"]').first();
+
+			if (input.length) {
+				input.focus();
+
+				input.removeClass('input-highlight');
+
+				setTimeout(function () {
+					input.addClass('input-highlight');
+				}, 50);
+
+				setTimeout(function () {
+					input.removeClass('input-highlight');
+				}, 2000);
+			}
+		});
+	});
+});

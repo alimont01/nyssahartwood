@@ -3,7 +3,7 @@
 		<div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
 
 			<form
-				class="ml-block-form download-form w-100 d-flex"
+				class="ml-block-form download-form w-100 d-flex flex-column flex-sm-row"
 				action="https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/subscribe"
 				data-code=""
 				method="post"
