@@ -4,13 +4,19 @@
  *
  */
 
+if ( ! isset($_COOKIE['nyssa_download']) ) {
+	wp_redirect( home_url() );
+	exit;
+}
+
 get_header(); 
 ?>
 
+
 <main class="site-main thank-you-page">
 
-	<section class="container-fluid cream-bg py-5">
-		<div class="container py-lg-5">
+	<section class="container-fluid hero cream-bg">
+		<div class="container pb-4 pb-lg-5">
 			<div class="row justify-content-center text-center">
 				<div class="col-lg-8">
 
@@ -23,7 +29,7 @@ get_header();
                     <a
                         id="free-book-download"
                         href="https://nyssa-hartwood.amd-dev.uk/wp-content/uploads/2026/05/Healing-Meals-Prep-to-Pain-Free.pdf"
-                        class="btn btn-success btn-lg rounded-pill px-5 py-3"
+                        class="button"
                         download
                     >
                         <span class="download-text">Download your free book</span>
@@ -76,12 +82,15 @@ get_header();
 			const tempLink = document.createElement('a');
 
 			tempLink.href = fileUrl;
-			tempLink.download = '';
+			tempLink.download = 'healing-meals-free-book.pdf';
 			tempLink.style.display = 'none';
 
 			document.body.appendChild(tempLink);
 			tempLink.click();
 			document.body.removeChild(tempLink);
+
+			// Clear the access cookie after download starts
+			document.cookie = "nyssa_download=; path=/; max-age=0";
 
 			setTimeout(function () {
 				downloadText.textContent = 'Download your free book';

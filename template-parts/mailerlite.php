@@ -38,6 +38,12 @@
 </div>
 
 <script>
+	document.querySelector('.download-form').addEventListener('submit', function () {
+		document.cookie = "nyssa_download=1; path=/; max-age=300"; // 5 mins
+	});
+</script>
+
+<script>
 	function ml_webform_success_41295617() {
 		try {
 			window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';

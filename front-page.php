@@ -26,7 +26,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <img class="position-absolute top-0 start-0 cover-img" src="<?php echo $thumb['0'];?>" alt="Nyssa Hartwood Healing Meals">
+        <img class="position-absolute top-0 start-0 cover-img" src="<?php echo $thumb['0'];?>" alt="Nyssa Hartwood Anti-Inflammatory Recipes">
     </div>
     <div class="container z-top overlap">
         <div class="row px-0 px-lg-5">
@@ -49,5 +49,22 @@ get_header(); ?>
 
     <?php get_template_part( 'template-parts/flexible-page-content' ); ?>
 
+    <div class="container-fluid darker-cream-bg position-relative">
+        <div class="container z-top">
+            <div class="row align-items-center">
+                <div class="col-lg-8 py-4 pt-lg-5">
+                    <h3 class="mt-0">
+                        Get Your Free Healing Meals Book
+                    </h3>
+                    <p>A collection of simple, anti-inflammatory recipes to help you feel your best.</p>
+                    <?php get_template_part( 'template-parts/mailerlite' ); ?>
+                </div>
+                <div class="col-lg-4">
+                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/bowl-of-food.png" alt="Nyssa Hartwood Anti-Inflammatory Recipes">
+                </div>
+            </div>
+        </div>
+        <div class="white-mask"></div>
+    </div>
 
 <?php get_footer(); ?>

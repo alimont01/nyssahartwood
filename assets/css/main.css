@@ -188,8 +188,20 @@ header .main-navigation li {
 .lighter-cream-bg {
   background-color: #FFFAF0;
 }
+.darker-cream-bg {
+  background-color: #F9F0DE;
+}
 .grey-bg {
   background-color: #efefef;
+}
+.white-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  z-index: 0;
 }
 .recipe-bg {
   background-image: url(../img/recipe-bg.jpg);
