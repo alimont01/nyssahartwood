@@ -22,7 +22,7 @@ get_header();
 
                     <a
                         id="free-book-download"
-                        href="<?php echo esc_url( get_template_directory_uri() . '/assets/downloads/healing-meals-free-book.pdf' ); ?>"
+                        href="https://nyssa-hartwood.amd-dev.uk/wp-content/uploads/2026/05/Healing-Meals-Prep-to-Pain-Free.pdf"
                         class="btn btn-success btn-lg rounded-pill px-5 py-3"
                         download
                     >
