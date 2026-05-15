@@ -68,6 +68,8 @@
     </div>
 </footer>
 
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js" type="text/javascript"></script>
+
 <?php wp_footer(); ?>
 </body>
 </html>

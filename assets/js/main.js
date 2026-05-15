@@ -59,6 +59,33 @@ jQuery(function ($) {
 });
 
 
+// MailerLite
+window.ml_webform_success_41295617 = function () {
+	try {
+		window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+	} catch (e) {
+		window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+	}
+};
+
+window.ml_webform_success_41305627 = function () {
+	try {
+		window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+	} catch (e) {
+		window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+	}
+};
+
+document.addEventListener('submit', function (event) {
+	if (event.target.classList.contains('download-form')) {
+		document.cookie = "nyssa_download=1; path=/; max-age=300";
+	}
+}, true);
+
+fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/takel");
+fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187458686843618940/takel");
+
+
 // HP scroll to footer form
 jQuery(function ($) {
 	$('.free-book-link').on('click', function (e) {

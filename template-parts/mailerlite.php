@@ -36,7 +36,3 @@
 	</div>
 	<p class="small mt-3">Instant download. No spam.</p>
 </div>
-
-<script>
-	fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/takel");
-</script>
