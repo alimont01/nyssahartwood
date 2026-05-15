@@ -58,6 +58,7 @@ jQuery(function ($) {
 	}
 });
 
+
 // HP scroll to footer form
 jQuery(function ($) {
 	$('.free-book-link').on('click', function (e) {

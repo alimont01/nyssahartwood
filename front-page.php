@@ -21,7 +21,45 @@ get_header(); ?>
 						</h2>
 					<?php endif; ?>
                     <div class="my-4">
-                        <?php get_template_part( 'template-parts/mailerlite' ); ?>
+<div id="mlb2-41295617" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-41295617">
+	<div class="ml-form-embedWrapper embedForm">
+		<div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+
+			<form
+				class="ml-block-form download-form download-form-everywhere w-100 d-flex flex-column flex-sm-row"
+				action="https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/subscribe"
+				data-code=""
+				method="post"
+				target="_blank"
+			>
+				<input
+					type="email"
+					name="fields[email]"
+					placeholder="Add your email"
+					autocomplete="email"
+					required
+				>
+
+				<input type="hidden" name="ml-submit" value="1">
+				<input type="hidden" name="anticsrf" value="true">
+
+				<button type="submit">
+					Download free book
+				</button>
+			</form>
+
+		</div>
+
+		<div class="ml-form-successBody row-success" style="display: none;">
+			<div class="ml-form-successContent">
+				<h4>Thank you!</h4>
+				<p>You have successfully joined our subscriber list.</p>
+			</div>
+		</div>
+	</div>
+	<p class="small mt-3">Instant download. No spam.</p>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -57,8 +95,50 @@ get_header(); ?>
                         Get Your Free Healing Meals Book
                     </h3>
                     <p>A collection of simple, anti-inflammatory recipes to help you feel your best.</p>
-                    <?php get_template_part( 'template-parts/mailerlite' ); ?>
+
+                    <div id="mlb2-41305627" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-41305627">
+                        <div class="ml-form-embedWrapper embedForm">
+                            <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+
+                                <form
+                                    class="ml-block-form download-form download-form-home-footer w-100 d-flex flex-column flex-sm-row"
+                                    action="https://assets.mailerlite.com/jsonp/2347679/forms/187458686843618940/subscribe"
+                                    data-code=""
+                                    method="post"
+                                    target="_blank"
+                                >
+                                    <input
+                                        aria-label="email"
+                                        aria-required="true"
+                                        type="email"
+                                        name="fields[email]"
+                                        placeholder="Add your email"
+                                        autocomplete="email"
+                                        required
+                                    >
+
+                                    <input type="hidden" name="ml-submit" value="1">
+                                    <input type="hidden" name="anticsrf" value="true">
+
+                                    <button type="submit">
+                                        Download free book
+                                    </button>
+                                </form>
+
+                            </div>
+
+                            <div class="ml-form-successBody row-success" style="display: none;">
+                                <div class="ml-form-successContent">
+                                    <h4>Thank you!</h4>
+                                    <p>You have successfully joined our subscriber list.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="small mt-3">Instant download. No spam.</p>
+                    </div>
+
                 </div>
+
                 <div class="col-lg-4 d-none d-lg-block">
                     <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/bowl-of-food.png" alt="Nyssa Hartwood Anti-Inflammatory Recipes">
                 </div>
@@ -66,5 +146,35 @@ get_header(); ?>
         </div>
         <div class="white-mask d-none d-lg-block"></div>
     </div>
+
+
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js" type="text/javascript"></script>
+
+<script>
+	function ml_webform_success_41295617() {
+		try {
+			window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		} catch (e) {
+			window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		}
+	}
+
+	function ml_webform_success_41305627() {
+		try {
+			window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		} catch (e) {
+			window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		}
+	}
+
+	document.addEventListener('submit', function (event) {
+		if (event.target.classList.contains('download-form')) {
+			document.cookie = "nyssa_download=1; path=/; max-age=300";
+		}
+	}, true);
+
+	fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/takel");
+	fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187458686843618940/takel");
+</script>
 
 <?php get_footer(); ?>

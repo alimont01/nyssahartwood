@@ -3,7 +3,7 @@
 		<div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
 
 			<form
-				class="ml-block-form download-form w-100 d-flex flex-column flex-sm-row"
+				class="ml-block-form download-form download-form-everywhere w-100 d-flex flex-column flex-sm-row"
 				action="https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/subscribe"
 				data-code=""
 				method="post"
@@ -37,23 +37,6 @@
 	<p class="small mt-3">Instant download. No spam.</p>
 </div>
 
-<script>
-	document.querySelector('.download-form').addEventListener('submit', function () {
-		document.cookie = "nyssa_download=1; path=/; max-age=300"; // 5 mins
-	});
-</script>
-
-<script>
-	function ml_webform_success_41295617() {
-		try {
-			window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
-		} catch (e) {
-			window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
-		}
-	}
-</script>
-
-<script src="https://groot.mailerlite.com/js/w/webforms.min.js" type="text/javascript"></script>
 <script>
 	fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/takel");
 </script>

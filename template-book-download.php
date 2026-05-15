@@ -66,37 +66,34 @@ get_header();
 </main>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function () {
-		const downloadButton = document.getElementById('free-book-download');
+    document.addEventListener('DOMContentLoaded', function () {
+        const downloadButton = document.getElementById('free-book-download');
 
-		if (!downloadButton) {
-			return;
-		}
+        if (!downloadButton) return;
 
-		const downloadText = downloadButton.querySelector('.download-text');
-		const fileUrl = downloadButton.href;
+        const downloadText = downloadButton.querySelector('.download-text');
+        const fileUrl = downloadButton.href;
 
-		downloadText.textContent = 'Downloading…';
+        downloadText.textContent = 'Downloading…';
 
-		setTimeout(function () {
-			const tempLink = document.createElement('a');
+        setTimeout(function () {
+            const tempLink = document.createElement('a');
+            tempLink.href = fileUrl;
+            tempLink.setAttribute('download', 'healing-meals-free-book.pdf');
+            tempLink.style.display = 'none';
 
-			tempLink.href = fileUrl;
-			tempLink.download = 'healing-meals-free-book.pdf';
-			tempLink.style.display = 'none';
+            document.body.appendChild(tempLink);
+            tempLink.click();
+            document.body.removeChild(tempLink);
 
-			document.body.appendChild(tempLink);
-			tempLink.click();
-			document.body.removeChild(tempLink);
+            // Clear cookie after download starts
+            document.cookie = "nyssa_download=; path=/; max-age=0";
 
-			// Clear the access cookie after download starts
-			document.cookie = "nyssa_download=; path=/; max-age=0";
-
-			setTimeout(function () {
-				downloadText.textContent = 'Download your free book';
-			}, 2000);
-		}, 800);
-	});
+            setTimeout(function () {
+                downloadText.textContent = 'Download your free book';
+            }, 2000);
+        }, 800);
+    });
 </script>
 
 <?php get_footer(); ?>
