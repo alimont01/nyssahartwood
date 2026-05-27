@@ -22,13 +22,19 @@
         <div class="row">
             <div class="col-8 col-sm-5 col-lg-3">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                  <?php
-                  $shop_page_id = wc_get_page_id('shop');
+                    <?php
+                    $logo_is_white = get_field( 'choose_logo' );
 
-                  $logo_is_white = is_shop()
-                      ? get_field('choose_logo', $shop_page_id)
-                      : get_field('choose_logo');
-                  ?>
+                    if ( function_exists( 'is_shop' ) && is_shop() ) {
+                        $shop_page_id  = wc_get_page_id( 'shop' );
+                        $logo_is_white = get_field( 'choose_logo', $shop_page_id );
+                    }
+
+                    if ( is_home() && ! is_front_page() ) {
+                        $blog_page_id  = get_option( 'page_for_posts' );
+                        $logo_is_white = get_field( 'choose_logo', $blog_page_id );
+                    }
+                    ?>
 
                   <?php if ( $logo_is_white ): ?>
                       <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/nyssa-hartwood-logo-white.svg" alt="Nyssa Hartwood Logo white logo">
