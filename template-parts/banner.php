@@ -9,8 +9,13 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )
 			<div class="row justify-content-end">
 				<div class="col-md-6 ps-md-4 ps-lg-5">
 					<h1 class="mt-0 fs-1">
-						<?php the_title(); ?>
-						<?php woocommerce_page_title(); ?>
+						<?php
+						if ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
+							woocommerce_page_title();
+						} else {
+							the_title();
+						}
+						?>
 					</h1>
 					<?php if ( get_field('sub_title') ): ?>
 						<h2 class="fs-4 mt-4">
