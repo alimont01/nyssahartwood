@@ -26,7 +26,9 @@
 								<div class="col-12 col-sm-6 col-lg-12">
 									<?php if ( has_post_thumbnail() ) : ?>
 										<?php the_post_thumbnail( 'large', array( 'class' => 'w-100 rounded-4' ) ); ?>
-									<?php endif; ?> 
+									<?php else: ?>
+										<img class="w-100 rounded-4 wp-post-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" alt="Shop Nyssa Hartwood  Anti-Inflammatory Healing Meals">
+									<?php endif; ?>
 									<div class="recipe-cat d-block d-sm-none d-lg-block small">
 										<span>
 											<?php $term_names = wp_list_pluck( $terms, 'name' ); echo esc_html( implode( ', ', $term_names ) ); ?>

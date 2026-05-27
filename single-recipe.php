@@ -29,6 +29,8 @@ if ( have_posts() ) :
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <?php if ( has_post_thumbnail() ) : ?>
                             <?php the_post_thumbnail( 'large', array( 'class' => 'w-100 rounded-4 shadow-lg' ) ); ?>
+                        <?php else: ?>
+                            <img class="w-100 rounded-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" alt="Shop Nyssa Hartwood  Anti-Inflammatory Healing Meals">
                         <?php endif; ?>
                     </div>
                     <div class="col-lg-6">

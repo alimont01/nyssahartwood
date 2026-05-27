@@ -75,7 +75,9 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $shop_page_id ), 'f
                             <div class="col-12 col-lg-6 d-flex justify-content-center">
                                 <?php if ( has_post_thumbnail() ) : ?>
                                     <?php the_post_thumbnail( 'large', array( 'class' => 'shop-book-cover' ) ); ?>
-                                <?php endif; ?>
+								<?php else: ?>
+                                    <img class="shop-book-cover" src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" alt="Shop Nyssa Hartwood  Anti-Inflammatory Healing Meals">
+								<?php endif; ?>
                             </div>
 
                             <div class="col-12 col-lg-6 p-4 text-white d-flex flex-column">

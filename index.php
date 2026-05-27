@@ -41,6 +41,8 @@ get_header();
 							<div class="col-12 col-sm-6 col-lg-12">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'large', array( 'class' => 'w-100 rounded-4 shadow-lg' ) ); ?>
+								<?php else: ?>
+                  <img class="w-100 rounded-4 shadow wp-post-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/placeholder.png" alt="Shop Nyssa Hartwood  Anti-Inflammatory Healing Meals">
 								<?php endif; ?>
 							</div>
 

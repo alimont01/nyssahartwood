@@ -564,7 +564,7 @@
                             "label": "Body text",
                             "name": "body_text_call_to",
                             "aria-label": "",
-                            "type": "wysiwyg",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -574,26 +574,11 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "acfe_wysiwyg_height": 300,
-                            "acfe_wysiwyg_max_height": "",
-                            "acfe_wysiwyg_valid_elements": "",
-                            "acfe_wysiwyg_custom_style": "",
-                            "acfe_wysiwyg_disable_wp_style": 0,
-                            "acfe_wysiwyg_autoresize": 0,
-                            "acfe_wysiwyg_disable_resize": 0,
-                            "acfe_wysiwyg_remove_path": 0,
-                            "acfe_wysiwyg_menubar": 0,
-                            "acfe_wysiwyg_transparent": 0,
-                            "acfe_wysiwyg_merge_toolbar": 0,
-                            "acfe_wysiwyg_custom_toolbar": 0,
-                            "allow_in_bindings": 1,
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0,
-                            "acfe_wysiwyg_auto_init": 0,
-                            "acfe_wysiwyg_min_height": 300,
-                            "acfe_wysiwyg_toolbar_buttons": []
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
                         },
                         {
                             "key": "field_67fd0c0997b4b",
@@ -627,11 +612,12 @@
                                 "id": ""
                             },
                             "choices": {
-                                "green-bg white-text": "Teal",
-                                "light-blue-bg green-text": "Light Blue",
-                                "light-grey-bg green-text": "Light Grey"
+                                "green-bg text-white": "Green",
+                                "blue-bg text-white": "Blue",
+                                "purple-bg text-white": "Purple",
+                                "cream-bg": "Cream"
                             },
-                            "default_value": "light-blue-bg green-text",
+                            "default_value": "green-bg",
                             "return_format": "value",
                             "multiple": 0,
                             "allow_null": 0,
@@ -640,13 +626,7 @@
                             "ajax": 0,
                             "placeholder": "",
                             "create_options": 0,
-                            "save_options": 0,
-                            "allow_custom": 0,
-                            "search_placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "min": "",
-                            "max": ""
+                            "save_options": 0
                         }
                     ],
                     "min": "",
@@ -836,5 +816,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1778498037
+    "modified": 1779911404
 }

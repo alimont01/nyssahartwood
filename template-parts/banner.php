@@ -26,7 +26,7 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )
 			</div>
 		</div>
 		<div class="w-50 h-100 position-absolute start-0 top-0">
-			<img class="position-absolute top-0 start-0 feat-img" src="<?php echo $thumb['0'];?>" alt="Shop Anti-Inflammatory Healing Meals">
+			<img class="position-absolute top-0 start-0 feat-img" src="<?php echo $thumb['0'];?>" alt="Shop Nyssa Hartwood  Anti-Inflammatory Healing Meal">
 		</div>
 	</header>
 <?php else: ?> 

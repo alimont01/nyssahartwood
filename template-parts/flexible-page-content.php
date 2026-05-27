@@ -8,6 +8,8 @@
 			<?php get_template_part( 'template-parts/flexi-blocks/image-text' ); ?>
 		<?php elseif( get_row_layout() == 'intro_text_block' ): ?>
 			<?php get_template_part( 'template-parts/flexi-blocks/intro-text' ); ?>
+		<?php elseif( get_row_layout() == 'call_to_action_block' ): ?>
+			<?php get_template_part( 'template-parts/flexi-blocks/call-to-action' ); ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>

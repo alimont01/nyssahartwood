@@ -37,7 +37,7 @@
                     ?>
 
                   <?php if ( $logo_is_white ): ?>
-                      <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/nyssa-hartwood-logo-white.svg" alt="Nyssa Hartwood Logo white logo">
+                      <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/nyssa-hartwood-logo-white.svg" alt="Nyssa Hartwood Logo logo">
                   <?php else: ?>
                       <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/nyssa-hartwood-logo.svg" alt="Nyssa Hartwood Logo">
                   <?php endif; ?>
