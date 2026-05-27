@@ -387,6 +387,15 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_6a1751cc1014f": {
+                    "key": "layout_6a1751cc1014f",
+                    "name": "show_recipe_list",
+                    "label": "Show Recipe List",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_672c9f05c5533": {
                     "key": "layout_672c9f05c5533",
                     "name": "image_and_text_block",
@@ -506,7 +515,7 @@
                 "layout_66c36120ee8ea": {
                     "key": "layout_66c36120ee8ea",
                     "name": "call_to_action_block",
-                    "label": "Call to action block",
+                    "label": "Call to action block - General",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -627,6 +636,84 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6a174f77189f3": {
+                    "key": "layout_6a174f77189f3",
+                    "name": "call_to_action_block_download",
+                    "label": "Call to action block - Download free book",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6a174f77189f5",
+                            "label": "Title",
+                            "name": "title_call_to_download",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6a174f77189f6",
+                            "label": "Body text",
+                            "name": "body_text_call_to_download",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_6a174f77189f4",
+                            "label": "Book cover",
+                            "name": "book_call_to",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
                         }
                     ],
                     "min": "",
@@ -816,5 +903,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779911404
+    "modified": 1779913197
 }
