@@ -109,7 +109,8 @@ add_filter( 'wp_resource_hints', 'nyssa_hartwood_theme_font_resource_hints', 10,
 function mytheme_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'mytheme' ),
-		'footer'  => __( 'Footer Menu', 'mytheme' ),
+		'footer_1'  => __( 'Footer Menu 1', 'mytheme' ),
+		'footer_2'  => __( 'Footer Menu 2', 'mytheme' ),
 	) );
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );

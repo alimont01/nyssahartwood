@@ -21,7 +21,7 @@
                 <div class="col-5">
                 <?php
                     wp_nav_menu( array(
-                        'theme_location' => 'primary',
+                        'theme_location' => 'footer_1',
                         'menu_id'        => 'primary-menu',
                         'menu_class'     => '',
                         'container'      => 'nav',
@@ -32,7 +32,7 @@
                 <div class="col-5">
                 <?php
                     wp_nav_menu( array(
-                        'theme_location' => 'footer',
+                        'theme_location' => 'footer_2',
                         'menu_id'        => 'footer-menu',
                         'menu_class'     => '',
                         'container'      => 'nav',
