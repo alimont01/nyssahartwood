@@ -225,6 +225,10 @@ header .main-navigation li {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.repeating-heart {
+  background-image: url(../img/heart-green.svg);
+  background-size: auto;
+}
 .sign-post .wp-post-image {
   object-fit: cover;
   height: 260px !important;
@@ -245,11 +249,17 @@ footer li {
   height: auto;
   transform: translate(-0%, -43%) rotate(-9deg);
 }
-.book-cover-height {
+.book-cover-height,
+.book-cover-height-download {
   height: 120px;
 }
 .shop-book-cover {
   transform: translateY(-20px) rotate(-4deg);
+  width: 200px;
+  height: auto;
+}
+.download-book-cover {
+  transform: translateY(-55px) rotate(4deg);
   width: 200px;
   height: auto;
 }
@@ -376,6 +386,13 @@ button:hover {
   }
   .book-block {
     margin-top: 0px;
+  }
+  .book-cover-height-download {
+    height: 30px;
+  }
+  .download-book-cover {
+    transform: translateY(-71px) rotate(4deg);
+    width: 120px;
   }
 }
 

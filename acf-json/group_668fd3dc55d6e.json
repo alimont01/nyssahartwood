@@ -89,7 +89,7 @@
                 "layout_67d40e9b0a6fe": {
                     "key": "layout_67d40e9b0a6fe",
                     "name": "book_block",
-                    "label": "Book block",
+                    "label": "Book Sign Post block",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -280,7 +280,7 @@
                 "layout_69e65d6b82df4": {
                     "key": "layout_69e65d6b82df4",
                     "name": "recipe_block",
-                    "label": "Recipe block",
+                    "label": "Recipe Sign Post block",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -384,15 +384,6 @@
                             "preview_size": "medium"
                         }
                     ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_6a1751cc1014f": {
-                    "key": "layout_6a1751cc1014f",
-                    "name": "show_recipe_list",
-                    "label": "Show Recipe List",
-                    "display": "block",
-                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -509,6 +500,15 @@
                             "ui_off_text": ""
                         }
                     ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6a1751cc1014f": {
+                    "key": "layout_6a1751cc1014f",
+                    "name": "show_recipe_list",
+                    "label": "Show Recipe List",
+                    "display": "block",
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -648,11 +648,11 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_6a174f77189f5",
-                            "label": "Title",
-                            "name": "title_call_to_download",
+                            "key": "field_6a17e8799433b",
+                            "label": "",
+                            "name": "",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "message",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -661,209 +661,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_6a174f77189f6",
-                            "label": "Body text",
-                            "name": "body_text_call_to_download",
-                            "aria-label": "",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "rows": "",
-                            "placeholder": "",
-                            "new_lines": ""
-                        },
-                        {
-                            "key": "field_6a174f77189f4",
-                            "label": "Book cover",
-                            "name": "book_call_to",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "allow_in_bindings": 0,
-                            "preview_size": "medium"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_66e8003f0e018": {
-                    "key": "layout_66e8003f0e018",
-                    "name": "accordion",
-                    "label": "Accordion (FAQ's)",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_66e801160e01e",
-                            "label": "Accordion title",
-                            "name": "faq_header",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_66e8029b37077",
-                            "label": "Accordion body text",
-                            "name": "faq_body_text",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "allow_in_bindings": 0,
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0,
-                            "acfe_wysiwyg_auto_init": 0,
-                            "acfe_wysiwyg_height": 300,
-                            "acfe_wysiwyg_min_height": 300,
-                            "acfe_wysiwyg_max_height": "",
-                            "acfe_wysiwyg_valid_elements": "",
-                            "acfe_wysiwyg_custom_style": "",
-                            "acfe_wysiwyg_disable_wp_style": 0,
-                            "acfe_wysiwyg_autoresize": 0,
-                            "acfe_wysiwyg_disable_resize": 0,
-                            "acfe_wysiwyg_remove_path": 0,
-                            "acfe_wysiwyg_menubar": 0,
-                            "acfe_wysiwyg_transparent": 0,
-                            "acfe_wysiwyg_merge_toolbar": 0,
-                            "acfe_wysiwyg_custom_toolbar": 0,
-                            "acfe_wysiwyg_toolbar_buttons": []
-                        },
-                        {
-                            "key": "field_66e800530e01a",
-                            "label": "FAQ",
-                            "name": "faqs_list",
-                            "aria-label": "",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "layout": "table",
-                            "min": 0,
-                            "max": 0,
-                            "collapsed": "",
-                            "button_label": "Add Row",
-                            "rows_per_page": 20,
-                            "acfe_repeater_stylised_button": 0,
-                            "sub_fields": [
-                                {
-                                    "key": "field_66e800e20e01c",
-                                    "label": "Question",
-                                    "name": "question",
-                                    "aria-label": "",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "maxlength": "",
-                                    "allow_in_bindings": 0,
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "parent_repeater": "field_66e800530e01a"
-                                },
-                                {
-                                    "key": "field_66e800fe0e01d",
-                                    "label": "Answer",
-                                    "name": "answer",
-                                    "aria-label": "",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "allow_in_bindings": 0,
-                                    "tabs": "all",
-                                    "toolbar": "basic",
-                                    "media_upload": 0,
-                                    "delay": 0,
-                                    "parent_repeater": "field_66e800530e01a",
-                                    "acfe_wysiwyg_auto_init": 0,
-                                    "acfe_wysiwyg_height": 300,
-                                    "acfe_wysiwyg_min_height": 300,
-                                    "acfe_wysiwyg_max_height": "",
-                                    "acfe_wysiwyg_valid_elements": "",
-                                    "acfe_wysiwyg_custom_style": "",
-                                    "acfe_wysiwyg_disable_wp_style": 0,
-                                    "acfe_wysiwyg_autoresize": 0,
-                                    "acfe_wysiwyg_disable_resize": 0,
-                                    "acfe_wysiwyg_remove_path": 0,
-                                    "acfe_wysiwyg_menubar": 0,
-                                    "acfe_wysiwyg_transparent": 0,
-                                    "acfe_wysiwyg_merge_toolbar": 0,
-                                    "acfe_wysiwyg_custom_toolbar": 0,
-                                    "acfe_wysiwyg_toolbar_buttons": []
-                                }
-                            ]
+                            "message": "This option shows the “Download Free Book” subscribe form. You can manage the content in “Site Options.”",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
                         }
                     ],
                     "min": "",
@@ -894,11 +694,7 @@
                             ],
                             "post_status": "",
                             "taxonomy": "",
-                            "filters": [
-                                "search",
-                                "post_type",
-                                "taxonomy"
-                            ],
+                            "filters": "",
                             "return_format": "object",
                             "min": "",
                             "max": "",
@@ -945,5 +741,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779949427
+    "modified": 1779951873
 }

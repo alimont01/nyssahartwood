@@ -325,3 +325,17 @@ function nyssa_get_cart_count() {
 }
 add_action( 'wp_ajax_nyssa_get_cart_count', 'nyssa_get_cart_count' );
 add_action( 'wp_ajax_nopriv_nyssa_get_cart_count', 'nyssa_get_cart_count' );
+
+/**
+ * ACF options pages
+ */
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Site options',
+		'menu_title'	=> 'Site options',
+		'menu_slug' 	=> 'site-options',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+}
