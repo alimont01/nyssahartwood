@@ -835,6 +835,7 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": [
+        "the_content",
         "tags"
     ],
     "active": true,
@@ -843,5 +844,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779966970
+    "modified": 1779976339
 }
