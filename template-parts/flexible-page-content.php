@@ -18,6 +18,8 @@
 			<?php get_template_part( 'template-parts/flexi-blocks/all-products' ); ?>
 		<?php elseif( get_row_layout() == 'faqs' ): ?>
 			<?php get_template_part( 'template-parts/flexi-blocks/accordion' ); ?>
+		<?php elseif( get_row_layout() == 'text_only' ): ?>
+			<?php get_template_part( 'template-parts/flexi-blocks/text-only' ); ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>

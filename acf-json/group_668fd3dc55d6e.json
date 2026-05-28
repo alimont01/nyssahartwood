@@ -46,10 +46,10 @@
                         },
                         {
                             "key": "field_6a01b1dc8f7f9",
-                            "label": "Intro body text",
+                            "label": "Intro body text (should be quite short)",
                             "name": "intro_body_text",
                             "aria-label": "",
-                            "type": "wysiwyg",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -59,11 +59,11 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "allow_in_bindings": 1,
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 0,
-                            "delay": 0
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
                         },
                         {
                             "key": "field_6a01b1dc8f7fa",
@@ -81,6 +81,37 @@
                             },
                             "return_format": "array",
                             "allow_in_bindings": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6a182045c380b": {
+                    "key": "layout_6a182045c380b",
+                    "name": "text_only",
+                    "label": "Text only",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6a182045c380d",
+                            "label": "Text only block",
+                            "name": "text_only_block",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -719,7 +750,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
+                            "layout": "block",
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -753,7 +784,7 @@
                                     "label": "Answer",
                                     "name": "answer",
                                     "aria-label": "",
-                                    "type": "text",
+                                    "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -765,9 +796,9 @@
                                     "default_value": "",
                                     "maxlength": "",
                                     "allow_in_bindings": 0,
+                                    "rows": 4,
                                     "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
+                                    "new_lines": "",
                                     "parent_repeater": "field_6a1804a5a5e44"
                                 }
                             ]
@@ -810,5 +841,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779959037
+    "modified": 1779966257
 }
