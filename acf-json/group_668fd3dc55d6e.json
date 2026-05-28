@@ -868,6 +868,48 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6a17df2ac58f7": {
+                    "key": "layout_6a17df2ac58f7",
+                    "name": "product_list",
+                    "label": "Product list",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6a17df2dc58f9",
+                            "label": "Choose and order products",
+                            "name": "choose_and_order_products",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "product"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "return_format": "object",
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "elements": "",
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -903,5 +945,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1779913197
+    "modified": 1779949427
 }
