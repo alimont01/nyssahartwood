@@ -86,35 +86,36 @@ fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187446448240985275/take
 fetch("https://assets.mailerlite.com/jsonp/2347679/forms/187458686843618940/takel");
 
 
-// HP scroll to footer form
-jQuery(function ($) {
-	$('.free-book-link').on('click', function (e) {
-		e.preventDefault();
+// Mobile menu
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector("#mobile-menu");
+    const openButton = document.querySelector(".mobile-menu");
+    const closeButton = document.querySelector(".mobile-menu-close");
+    const body = document.body;
 
-		const target = $('#footer-form');
+    if (!menu || !openButton) return;
 
-		if (!target.length) {
-			return;
-		}
+    function openMenu() {
+        body.classList.add("mobile-menu-open");
+        openButton.setAttribute("aria-expanded", "true");
+        menu.setAttribute("aria-hidden", "false");
+    }
 
-		$('html, body').animate({
-			scrollTop: target.offset().top - 80
-		}, 700, function () {
-			const input = target.find('input[type="email"]').first();
+	function closeMenu() {
+		body.classList.remove("mobile-menu-open");
+		openButton.setAttribute("aria-expanded", "false");
+		menu.setAttribute("aria-hidden", "true");
+	}
 
-			if (input.length) {
-				input.focus();
+    openButton.addEventListener("click", openMenu);
 
-				input.removeClass('input-highlight');
+    if (closeButton) {
+        closeButton.addEventListener("click", closeMenu);
+    }
 
-				setTimeout(function () {
-					input.addClass('input-highlight');
-				}, 50);
-
-				setTimeout(function () {
-					input.removeClass('input-highlight');
-				}, 2000);
-			}
-		});
-	});
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
 });
