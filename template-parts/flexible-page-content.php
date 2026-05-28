@@ -16,6 +16,8 @@
 			<?php get_template_part( 'template-parts/flexi-blocks/all-recipes' ); ?>
 		<?php elseif( get_row_layout() == 'product_list' ): ?>
 			<?php get_template_part( 'template-parts/flexi-blocks/all-products' ); ?>
+		<?php elseif( get_row_layout() == 'faqs' ): ?>
+			<?php get_template_part( 'template-parts/flexi-blocks/accordion' ); ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>
