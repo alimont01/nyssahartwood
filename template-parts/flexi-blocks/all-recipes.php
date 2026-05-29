@@ -7,7 +7,7 @@
                             $query_args = array(
                                 'post_type' => 'recipe',
                                 'posts_per_page' => -1,
-                                'order' => 'ASC',
+                                'order' => 'RAND',
                                 'orderby' => 'title',
                                 );
                                 
@@ -19,7 +19,7 @@
                     $terms = get_the_terms( get_the_ID(), 'recipe_category' );
                     ?>
 
-                    <a href="<?php the_permalink() ?>" class="col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+                    <a href="<?php the_permalink() ?>" class="col-12 col-sm-12 col-lg-4 mb-3 mb-lg-4">
                         <div class="bg-white rounded-4 d-flex flex-wrap flex-column flex-sm-row flex-lg-column text-center sign-post h-100">
                             <div class="col-12 col-sm-6 col-lg-12">
                                 <?php if ( has_post_thumbnail() ) : ?>
