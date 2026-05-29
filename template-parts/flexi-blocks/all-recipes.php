@@ -7,8 +7,7 @@
                             $query_args = array(
                                 'post_type' => 'recipe',
                                 'posts_per_page' => -1,
-                                'order' => 'RAND',
-                                'orderby' => 'title',
+                                'orderby' => 'rand',
                                 );
                                 
                         $the_query = new WP_Query( $query_args );
