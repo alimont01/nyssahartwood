@@ -1,0 +1,24 @@
+name: Deploy theme to live
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to live
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Deploy theme files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.LIVE_FTP_SERVER }}
+          username: ${{ secrets.LIVE_FTP_USERNAME }}
+          password: ${{ secrets.LIVE_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./
+          server-dir: ${{ secrets.LIVE_FTP_REMOTE_PATH }}
