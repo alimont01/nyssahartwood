@@ -78,9 +78,13 @@
 				<?php if( get_sub_field('block_title_text_image') ): ?>
 					<h2 class="mb-3"><?php echo acf_esc_html( get_sub_field('block_title_text_image') ); ?></h2>
 				<?php endif; ?>
-				<?php if( get_sub_field('body_text_text_image') ): ?>
-					<?php echo acf_esc_html( get_sub_field('body_text_text_image') ); ?>
-				<?php endif; ?>
+				<?php
+                $body_text = get_sub_field('body_text_text_image');
+
+                if ( $body_text ) {
+                    echo apply_filters( 'the_content', $body_text );
+                }
+                ?>
 				<?php 
 				$link = get_sub_field('block_link_text_image');
 				if( $link ): 

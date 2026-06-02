@@ -46,9 +46,20 @@ a {
 .green-arrow {
   color: #6E851F;
 }
+.nf-form-fields-required {
+  margin-bottom: 10px;
+}
+.nf-form-content input,
+.nf-form-content textarea {
+  background: #F2F2F2;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
 .button,
 .wc-block-components-button,
-.woocommerce-button {
+.woocommerce-button,
+#nf-field-4 {
   background-color: #6E851F !important;
   color: #fff !important;
   padding: 10px 25px !important;
@@ -71,7 +82,8 @@ a {
 .button:hover,
 .button-white:hover,
 .wc-block-components-button:hover,
-.woocommerce-button:hover {
+.woocommerce-button:hover,
+#nf-field-4:hover {
   color: #fff;
   background-color: #222 !important;
 }
@@ -452,7 +464,6 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
         opacity: 1;
     }
 }
-
 /* Responsive styles */
 @media (max-width: 1399px) {
 
