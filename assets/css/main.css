@@ -295,6 +295,20 @@ footer li {
   padding: 5px 20px;
   border-radius: 30px;
 }
+.single-product .upsells.products {
+  display: none;
+}
+.woocommerce-cart .wp-block-woocommerce-product-collection h2.wp-block-heading {
+  font-size: 1.2rem !important;
+  transform: translateY(-20px);
+}
+.woocommerce-cart .wc-block-cart__main .wc-block-cart-items {
+  margin-bottom: 20px;
+}
+.woocommerce-cart .wp-block-woocommerce-product-collection {
+  background-color: #FDF5E4;
+  padding: 20px;  
+}
 .single-product .wp-post-image {
    rotate: -5deg;
    max-width: 380px;
