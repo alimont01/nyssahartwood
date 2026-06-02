@@ -62,17 +62,17 @@ jQuery(function ($) {
 // MailerLite
 window.ml_webform_success_41295617 = function () {
 	try {
-		window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		window.top.location.href = 'https://nyssahartwood.com/thank-you/';
 	} catch (e) {
-		window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		window.location.href = 'https://nyssahartwood.com/thank-you/';
 	}
 };
 
 window.ml_webform_success_41305627 = function () {
 	try {
-		window.top.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		window.top.location.href = 'https://nyssahartwood.com/thank-you/';
 	} catch (e) {
-		window.location.href = 'https://nyssa-hartwood.amd-dev.uk/thank-you/';
+		window.location.href = 'https://nyssahartwood.com/thank-you/';
 	}
 };
 
