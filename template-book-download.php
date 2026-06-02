@@ -28,7 +28,7 @@ get_header();
 
                     <a
                         id="free-book-download"
-                        href="https://nyssa-hartwood.amd-dev.uk/wp-content/uploads/2026/05/Healing-Meals-Prep-to-Pain-Free.pdf"
+                        href="<?php echo acf_esc_html( get_field('upload_free_pdf', 'option') ); ?>"
                         class="button"
                         download
                     >
