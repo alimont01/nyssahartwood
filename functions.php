@@ -331,26 +331,27 @@ add_action( 'wp_ajax_nopriv_nyssa_get_cart_count', 'nyssa_get_cart_count' );
  * Rename WooCommerce product description label in admin.
  */
 function nyssa_rename_product_description_admin_label() {
-	global $post_type;
+	$screen = get_current_screen();
 
-	if ( 'product' !== $post_type ) {
+	if ( ! $screen || 'product' !== $screen->post_type ) {
 		return;
 	}
 	?>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			const label = document.querySelector('#postdivrich h2');
-
-			if (label && label.textContent.trim() === 'Product description') {
-				label.textContent = 'More about this book';
-			}
+			setTimeout(function () {
+				document.querySelectorAll('*').forEach(function (el) {
+					if (el.children.length === 0 && el.textContent.trim() === 'Product description') {
+						el.textContent = 'More about this book';
+					}
+				});
+			}, 500);
 		});
 	</script>
 	<?php
 }
 add_action( 'admin_footer-post.php', 'nyssa_rename_product_description_admin_label' );
 add_action( 'admin_footer-post-new.php', 'nyssa_rename_product_description_admin_label' );
-
 
 /**
  * ACF options pages
