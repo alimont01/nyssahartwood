@@ -328,6 +328,22 @@ footer li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.single-product .related.products ul {
+  padding: 0;
+}
+.single-product .related.products li {
+  list-style: none;
+}
+.single-product .related.products h2.woocommerce-loop-product__title,
+.single-product .related.products .amount {
+ font-size: 20px;
+  display: block; 
+}
+.single-product .related.products {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 40px;
+}
 .woocommerce .quantity,
 .woocommerce .tabs {
   display: none;
