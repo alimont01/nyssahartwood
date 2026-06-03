@@ -478,6 +478,13 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
         opacity: 1;
     }
 }
+
+.error404 .col-lg-7 img {
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 20px;
+}
+
 /* Responsive styles */
 @media (max-width: 1399px) {
 
