@@ -309,6 +309,11 @@ footer li {
   background-color: #FDF5E4;
   padding: 20px;  
 }
+.wc-block-components-checkout-place-order-button__text {
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px
+}
 .single-product .wp-post-image {
    rotate: -5deg;
    max-width: 380px;
