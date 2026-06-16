@@ -29,7 +29,7 @@ get_header();
 
                 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'row g-5', $product ); ?>>
 
-                    <div class="col-12 col-lg-6 position-relative">
+                    <div class="col-12 col-lg-6 mt-0 mt-lg-4 position-relative">
                         <div class="z-top d-flex justify-content-center">
                             <?php
                             /**
@@ -73,21 +73,23 @@ get_header();
             </div>
 		</div>
 
-        <div class="container py-4 py-lg-5 more-book">
-            <div class="row">
-                <div class="col-12">
-                    <?php
-                    /**
-                     * Hook: woocommerce_after_single_product_summary.
-                     *
-                     * @hooked woocommerce_output_product_data_tabs - 10
-                     * @hooked woocommerce_upsell_display - 15
-                     * @hooked woocommerce_output_related_products - 20
-                     */
-                    do_action( 'woocommerce_after_single_product_summary' );
-                    ?>
+        <div class="container-fluid py-4 py-lg-5 more-book">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <?php
+                        /**
+                         * Hook: woocommerce_after_single_product_summary.
+                         *
+                         * @hooked woocommerce_output_product_data_tabs - 10
+                         * @hooked woocommerce_upsell_display - 15
+                         * @hooked woocommerce_output_related_products - 20
+                         */
+                        do_action( 'woocommerce_after_single_product_summary' );
+                        ?>
+                    </div>
                 </div>
-            </div>
+        </div>
         </div>
 
 	<?php endwhile; ?>

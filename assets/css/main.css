@@ -521,7 +521,8 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
     margin-bottom: 20px;
   }
   .book-cover {
-    transform: translate(-0%, 11%) rotate(-9deg);
+    transform: translate(0%, 1%) rotate(-9deg);
+      width: 150px;
   }
   .overlap {
     margin-top: -40px;
@@ -539,6 +540,9 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
     transform: translateY(-71px) rotate(4deg);
     width: 120px;
   }
+  .sign-post .wp-post-image {
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -555,6 +559,25 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
     height: 260px !important;
     object-position: top;
   }
+  .download-book-cover {
+    transform: translateY(-41px) rotate(4deg);
+    width: 120px;
+  }
+  .download-form input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  .download-form button {
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .post-type-archive-product .sign-post-2 .h-100 {
+    height: auto !important;
+  }
+  .single-product .wp-post-image {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -568,12 +591,7 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
   .book-cover-height {
     height: auto;
   }
-  .download-form input {
-    border-radius: 30px;
-    margin-bottom: 10px;
-  }
-  .download-form button {
-    border-radius: 30px;
-    padding: 10px;
+  .post-type-archive-product .wp-post-image {
+    width: 80%;
   }
 }
