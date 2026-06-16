@@ -541,7 +541,7 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
     width: 120px;
   }
   .sign-post .wp-post-image {
-    height: 100% !important;
+    height: 300px !important;
   }
 }
 
@@ -593,5 +593,8 @@ body.mobile-menu-open #mobile-menu li:nth-child(8) { animation-delay: 0.91s; }
   }
   .post-type-archive-product .wp-post-image {
     width: 80%;
+  }
+  .sign-post .wp-post-image {
+    height: 260px !important;
   }
 }
