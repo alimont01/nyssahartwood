@@ -366,3 +366,21 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 }
+
+
+function my_social_meta_tags() {
+    ?>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+    <meta property="og:title" content="<?php bloginfo('name'); ?>">
+    <meta property="og:description" content="<?php bloginfo('description'); ?>">
+    <meta property="og:url" content="<?php echo home_url(); ?>">
+    <meta property="og:image" content="https://nyssahartwood.com/wp-content/uploads/2026/06/nyssa-heartwood.png>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
+    <meta name="twitter:description" content="<?php bloginfo('description'); ?>">
+    <meta name="twitter:image" content="https://nyssahartwood.com/wp-content/uploads/2026/06/nyssa-heartwood.png">
+    <?php
+}
+add_action('wp_head', 'my_social_meta_tags');
