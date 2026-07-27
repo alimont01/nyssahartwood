@@ -6,6 +6,7 @@
  */
 ?>
 
+</main>
 
 <footer class="container-fluid cream-bg py-3 py-lg-5">
     <div class="container">

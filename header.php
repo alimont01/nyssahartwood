@@ -108,3 +108,5 @@
     </div>
     <img class="position-absolute start-0 bottom-0 w-100 opacity-25" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/heart-white.svg" alt="Nyssa Hartwood heart graphic">
 </div>
+
+<main>
