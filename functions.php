@@ -9,6 +9,7 @@
  * Set up theme supports.
  */
 function nyssa_hartwood_theme_setup() {
+	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'woocommerce' );
 	add_image_size( 'square', 700, 700,  array( 'center', 'center' ) );
