@@ -41,7 +41,9 @@
                     ?>
                 </div>
                 <div class="col-2 text-end">
-                    <a href="/my-account/"><i class="bi bi-person-circle fs-5 me-2"></i></a>
+                    <a href="/my-account/" aria-label="View your account">
+                        <i class="bi bi-person-circle fs-5 me-2"></i>
+                    </a>
                     <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="cart-icon">
                       <i class="bi bi-bag-heart-fill fs-5"></i>
                       <span class="cart-count"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>

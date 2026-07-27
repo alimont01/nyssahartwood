@@ -54,14 +54,16 @@
             </div>
             <div class="col-5 col-sm-7 col-lg-9 d-flex flex-column align-items-end">
                 <div class="d-flex flex-grow-1 sub-menu align-items-center align-items-md-start">
-                    <a href="/my-account/"><i class="bi bi-person-circle fs-5 me-2"></i></a>
-                    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="cart-icon">
+                    <a href="/my-account/" aria-label="View your account">
+                        <i class="bi bi-person-circle fs-5 me-2"></i>
+                    </a>
+                    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="cart-icon" aria-label="Cart">
                         <i class="bi bi-bag-heart-fill fs-5"></i>
                         <span class="cart-count">
                             <?php echo WC()->cart ? esc_html( WC()->cart->get_cart_contents_count() ) : '0'; ?>
                         </span>
                     </a>
-                    <button class="d-inline-block d-md-none ms-4 text-center rounded-circle mobile-menu" type="button" aria-controls="mobile-menu" aria-expanded="false">
+                    <button class="d-inline-block d-md-none ms-4 text-center rounded-circle mobile-menu" type="button" aria-controls="mobile-menu" aria-label="Open mobile menu" aria-expanded="false">
                         <i class="bi bi-list fs-5"></i>
                     </button>
                 </div>
